@@ -1,40 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# User Management App
 
-## Getting Started
+A user-friendly application to manage user data efficiently, featuring a dynamic table with sorting, pagination, and filtering capabilities. This project uses modern technologies such as **Next.js**, **TanStack Query**, **TanStack Table**, and **shadcn/ui**.
 
-First, run the development server:
+## Project Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Dynamic Table**: Sortable, filterable, and paginated table using TanStack Table.
+- **Data Fetching**: Efficient server-side data fetching with TanStack Query.
+- **UI Components**: Responsive design with shadcn/ui.
+
+## Project Structure
+
+```
+user-management-app/
+├── public/               # Static assets
+├── src/
+│   ├── components/       # Reusable components
+│   │   ├── ui/           # UI components
+│   │   │   ├── Button.jsx   # Button component
+│   │   │   ├── Input.jsx    # Input component
+│   │   │   ├── Table.jsx    # Table component
+│   │   ├── assets/       # Custom assets
+│   │       ├── UserTable.jsx  # User table component
+│   │       ├── Pagination.jsx # Pagination component
+│   │       ├── Loader.jsx     # Loader component
+│   ├── hooks/            # Custom React hooks
+│   │   ├── useUsers.js   # Hook for user data fetching (TanStack Query)
+│   ├── pages/            # Next.js pages
+│   │   ├── users/        # Users-related pages
+│   ├── styles/           # CSS/SCSS files
+│   ├── utils/            # Utility functions
+├── README.md             # Project documentation
+├── package.json          # Project dependencies and scripts
+├── next.config.mjs       # Next.js configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+└── postcss.config.js     # PostCSS configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Ensure you have the following installed:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- [Node.js](https://nodejs.org/) (v18+)
+- npm or yarn
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Installation and Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these steps to set up and run the project:
 
-## Learn More
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hk-gitshub/user-management-app.git
+   cd user-management-app
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
 
-## Deploy on Vercel
+## Technology Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework**: Next.js (15.1.3)
+- **State Management**: TanStack Query
+- **Table Management**: TanStack Table
+- **UI Components**: shadcn/ui, Tailwind CSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Running Tests
+
+To run tests (if applicable):
+```bash
+npm test
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+
+For further information or issues, please reach out at [korihardik2808@gmail.com].
